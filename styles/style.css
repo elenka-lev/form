@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+   background-color:black;
+   color: antiquewhite;
+   overflow-x: hidden;
+}
+input {
+    color:aliceblue;
+    font-size: 18px;
+}
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    h1 {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 25px;
+        background: linear-gradient(45deg, #ff357a, #fff172);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        fieldset {
+            max-width: 500px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+    }
+}
+
+legend {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #ff357a, #fff172);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    
+
+}
+.personal {
+    border:1px solid #fff172;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    align-items: center;
+
+    input {
+        width: 300px;
+        height: 40px;
+        border: 2px solid #fff172;
+        border-radius: 20px;
+        background-color: black;
+        transition: all 0.2s ease;
+        padding-left: 20px;
+    }
+    input:hover,
+    input:focus {
+        border: 2px solid #ff357a;
+        outline: none;
+    }
+    input:active {
+        border: 2px solid #ff357a;
+    }
+}
+.wrap-cont {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    justify-content: space-between;
+}
+.wrap-gender {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+}
+#female {
+    margin-left: 50px;
+}
+#message {
+    background-color: black;
+    border: 2px solid #fff172;
+    border-radius: 10px;
+    width: 300px;
+    transition: all 0.2s ease;
+    margin-bottom: 10px;
+    color: aliceblue;
+    padding: 5px 10px;
+    font-size: 18px;
+
+}
+#message:hover,
+#message:focus {
+    border: 2px solid #ff357a;
+    outline: none;
+}
+
+.wrap-course {
+    border: 2px solid #ff357a;
+    margin-bottom: 20px;
+}
+select {
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    margin-bottom: 25px;
+    border: 2px solid #ff357a;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    outline: none;
+    color: aliceblue;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+select option {
+            color: #fff;  
+}
+select:hover,
+select:focus,
+select:active {
+    border: 2px solid #fff172;
+}
+
+.wrap-agree {
+    display:flex;
+    margin-bottom: 30px;
+    input {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    label {
+        color:#ff357a;
+        transition: all 0.2s ease;
+    }
+    input[type="checkbox"]:checked + label {
+        color: #fff172; 
+        font-weight: bold;
+}
+}
+.group-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    color: #fff;
+    font-size: 20px;
+    border-radius:20px;
+    width: 200px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:hover,
+button:focus {
+    opacity: 0.5;
+}
+.reset-btn{
+    background: linear-gradient(45deg, #ff357a, #fff172);
+}
+.sign-btn {
+    background: linear-gradient(58deg,#0078ff 60%, rgba(255, 241, 114, 1) 90%);
+    filter: brightness(1.2);
+}

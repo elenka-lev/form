@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+          <form action="#">
+            <fieldset class="personal">
+              <legend>Personal data</legend>
+              <div class="wrapper">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div class="wrapper">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div class="wrapper">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+              </div>
+              <div class="wrapper">
+                <label for="password-again">Confirm password:</label>
+                <input
+                  type="password"
+                  id="password-again"
+                  name="password-again"
+                />
+              </div>
+
+              <div class="wrap-cont">
+                <p>Gender:</p>
+                <div class="wrap-gender">
+                  <input type="radio" id="male" name="gender" value="male" />
+                  <label for="male">Male</label>
+
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <div class="wrapper">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" />
+              </div>
+
+              <div class="wrapper">
+                <label for="message">Full address:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  cols="50"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="wrap-course">
+              <legend>Choose a course</legend>
+              <select id="course-select" name="course">
+                <option value="">-- Choose a course --</option>
+                <option value="frontend">Front-End</option>
+                <option value="backend">Back-End</option>
+                <option value="pm">Project Management</option>
+                <option value="qa">QA Manual</option>
+              </select>
+            </fieldset>
+            <div class="wrap-agree">
+              <input type="checkbox" id="agree" />
+              <label for="agree"
+                >I agree to the processing of personal data</label
+              >
+            </div>
+
+            <div class="group-btn">
+              <button class="reset-btn" type="reset" value="Reset">
+                Reset form
+              </button>
+              <button class="sign-btn" type="submit" value="Submit">
+                Sign up
+              </button>
+            </div>
+          </form>
+        </div>
+    </main>
+  </body>
+</html>
