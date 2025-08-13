@@ -135,6 +135,10 @@ fieldset{
     outline: none;
 }
 
+#message::placeholder {
+    color: #949393;
+    font-size: 10px;
+}
 .wrap-course {
     border: 2px solid #ff357a;
     margin-bottom: 20px;
